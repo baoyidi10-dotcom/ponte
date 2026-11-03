@@ -139,13 +139,14 @@ body:lang(zh) .cell h3{font-size:1.3rem;line-height:1.4}
 .founder{display:grid;grid-template-columns:minmax(220px,340px) 1fr;gap:clamp(28px,5vw,72px);align-items:start}
 .photo-slot{aspect-ratio:4/5;border:1px dashed var(--copper);display:flex;align-items:center;justify-content:center;
   text-align:center;padding:20px;color:var(--grey);font-size:.9rem;background:rgba(169,91,46,.05)}
+.founder img.photo{display:block;width:100%;height:auto;aspect-ratio:3/4;object-fit:cover;border:1px solid var(--line)}
 .founder p{margin-bottom:1.1em;max-width:60ch}
 .founder p.big{font-family:var(--serif-d);font-size:clamp(1.3rem,2.2vw,1.7rem);line-height:1.45;color:var(--navy)}
 body:lang(zh) .founder p.big{font-family:var(--serif-b);font-size:clamp(1.1rem,1.8vw,1.35rem);line-height:1.8}
 .facts{list-style:none;border-top:1px solid var(--line);margin-top:26px}
 .facts li{padding:13px 0;border-bottom:1px solid var(--line);display:flex;gap:16px;font-size:.96rem}
 .facts li::before{content:"";width:18px;height:1px;background:var(--copper);margin-top:.9em;flex-shrink:0}
-@media(max-width:760px){.founder{grid-template-columns:1fr}.photo-slot{max-width:280px}}
+@media(max-width:760px){.founder{grid-template-columns:1fr}.photo-slot,.founder img.photo{max-width:280px}}
 
 /* ---------- pricing ---------- */
 .tier{display:flex;flex-direction:column}
